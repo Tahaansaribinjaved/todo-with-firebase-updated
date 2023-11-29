@@ -1,0 +1,11 @@
+#Todo{
+
+}
+#Time{
+    /* align-self: flex-end; */
+    
+}
+.li{
+    /* display: flex; */
+    list-style: decimal-leading-zero;
+}
