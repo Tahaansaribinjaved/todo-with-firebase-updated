@@ -46,6 +46,15 @@ function addGoogle(){
     .then((result) => {
         const user = result.user
         console.log(user);
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: `Your Acount ${email} has been   registered `,
+            showConfirmButton: false,
+            timer: 1500
+        });
+        location.href = './signin.html';
+
     }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message
